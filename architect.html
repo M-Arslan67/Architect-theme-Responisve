@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Segoe UI, Arial, sans-serif;
+
+    }
+
+    .main1 {
+        width: 100%;
+        height: 110vh;
+        /* border: 1px solid black; */
+        padding: 1px;
+
+
+    }
+
+    .navbar {
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid red; */
+        background-color: white;
+        margin-top: -10px;
+        position: relative;
+        padding: 1px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+
+    .logo {
+        width: 150px;
+        height: 35px;
+        /* border: 1px solid green; */
+        margin-top: 13px;
+        margin-left: 3%;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .h1 {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+    .span1 {
+        font-size: 15px;
+        font-weight: 400;
+        color: black;
+        font-family: Verdana, sans-serif;
+        letter-spacing: 3px;
+
+    }
+
+    .logo:hover {
+        cursor: pointer;
+        background-color: rgba(192, 192, 192, 0.699);
+    }
+
+    .nav {
+        width: 300px;
+        height: 50px;
+        /* border: 1px solid blue; */
+        position: absolute;
+        right: 5%;
+        top: 0%;
+    }
+
+    .ul {
+        list-style: none;
+
+
+    }
+
+    .li1 {
+        display: inline-block;
+        /* margin-left: 1%; */
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 10px;
+        letter-spacing: 2px;
+        /* border:1px solid; */
+        padding: 5px 10px;
+
+
+    }
+
+    .li1:hover {
+        background-color: silver;
+        cursor: pointer;
+    }
+
+    .background-div {
+        width: 98%;
+        /* height: 100vh; */
+        background-image: url(./architect.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: auto;
+        padding: 1px;
+    }
+
+    .br-div {
+        width: 300px;
+        height: 80px;
+        /* border: 2px solid black; */
+        margin: 25% auto;
+        position: relative;
+    }
+
+    .br-text {
+        width: 80px;
+        height: 65px;
+        background-color: rgba(0, 0, 0, 0.738);
+        margin-top: 5px;
+        padding: 1px;
+    }
+
+    .head-br {
+        color: rgba(255, 255, 255, 0.832);
+        text-align: center;
+        margin-top: 10px;
+        letter-spacing: 5px;
+    }
+
+    .para-br {
+        font-size: 36px;
+        font-weight: 400;
+        color: white;
+        letter-spacing: 5px;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+    }
+
+    .main2 {
+        width: 100%;
+        height: 90vh;
+        /* border: 1px solid black; */
+    }
+
+    .project-div2 {
+        width: 100px;
+        height: 40px;
+        /* border: 1px solid black; */
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .p-project2 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .line-div2 {
+        width: 95%;
+        height: 1px;
+        background-color: silver;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .mainhouse-div2 {
+        width: 94%;
+        height: max-content;
+        margin-left: 2%;
+        /* border: 1px solid black; */
+        margin-top: 5%;
+    }
+
+    .house-div21 {
+        width: 99%;
+        height: max-content;
+        /* border: 1px solid red; */
+        margin-left: .5%;
+        margin-top: .5%;
+
+
+    }
+
+    .house21 {
+        width: 24%;
+        display: inline-block;
+        margin-left: .5%;
+        /* border: 1px solid blue; */
+        position: relative;
+    }
+
+    .img-house21 {
+        width: 99%;
+        height: 99%;
+    }
+
+
+    .btn21 {
+        width: 120px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        position: absolute;
+        top: o;
+        left: 0;
+    }
+
+    .main3 {
+        width: 100%;
+        height: max-content;
+        padding-bottom: 50px;
+        /* border: 1px solid black; */
+    }
+
+    .about-pdiv3 {
+        width: 100px;
+        height: 40px;
+        /* border: 1px solid black; */
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .p-about3 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .line-div3 {
+        width: 95%;
+        height: 1px;
+        background-color: silver;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .para-div3 {
+        width: 94%;
+        height: max-content;
+        /* border: 1px solid black; */
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .about-div3 {
+        width: 94%;
+        height: max-content;
+        /* border: 1px solid red; */
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+
+    .john-div3 {
+        width: 23%;
+        height: max-content;
+        /* border: 1px solid blue; */
+        display: inline-block;
+        margin-left: .5%;
+    }
+
+    .john-img31 {
+        width: 100%;
+        color: gray;
+
+    }
+
+    .john-p31 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .john-p32 {
+        color: rgb(102, 102, 102);
+        margin-top: 10px;
+    }
+
+    .john-p33 {
+        margin-top: 10px;
+        font-size: 16px;
+        /* font-weight: 400; */
+    }
+
+    .btn3 {
+        width: 100%;
+        height: 35px;
+        margin-top: 5%;
+        font-size: 18px;
+        font-weight: 400;
+        border: none;
+    }
+    .btn3:hover{
+        cursor: pointer;
+        background-color: darkgray;
+    }
+
+    .main4 {
+        width: 100%;
+        height: 60vh;
+        /* border: 1px solid black; */
+        
+    }
+
+    .contact-pdiv4 {
+        width: 100px;
+        height: 40px;
+        /* border: 1px solid black; */
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .p-contact4 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .line-div4 {
+        width: 95%;
+        height: 1px;
+        background-color: silver;
+        margin-left: 2%;
+        margin-top: 1%;
+    }
+
+    .contact-div4 {
+        width: 91%;
+        height: max-content;
+        /* border: 1px solid red; */
+        margin-left: 2%;
+        margin-top: 1%;
+    }
+
+    .p-contact4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .input4 {
+        width: 100%;
+        height: 40px;
+        margin-top: 1%;
+        font-size: 16px;
+        padding: 10px;
+
+    }
+    .btn4{
+        width: 150px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        margin-left: 2%;
+        margin-top: 2%;
+        font-size: 16px;
+    }
+    .btn4:hover{
+        cursor: pointer;
+        color: black;
+        background-color: gray;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+    }
+    .main5{
+        width: 100%;
+        height: max-content;
+        padding-bottom: 20px;
+
+    }
+    .map-img5{
+        width: 100%;
+    
+    }
+    .main6{
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*.........................Media Querry....................  */
+    @media screen and (max-width:1024px) {
+        .main1 {
+            height: 90vh;
+        }
+
+        .main2 {
+            height: max-content;
+            padding-bottom: 50px;
+        }
+    }
+
+
+    @media screen and (max-width:1000px) {
+
+        .mainhouse-div2 {
+            width: 94%;
+            height: max-content;
+        }
+
+
+        .house21 {
+            width: 48%;
+
+
+        }
+
+        .john-div3 {
+            width: 46%;
+            margin-top: 2%;
+        }
+
+
+    }
+
+    @media screen and (max-width:768px) {
+
+        .main1 {
+            height: 70vh;
+
+        }
+    }
+
+    @media screen and (max-width:700px) {
+        .nav {
+            display: none;
+        }
+
+
+
+        .house21 {
+            width: 96%;
+
+        }
+
+        .john-div3 {
+            width: 96%;
+        }
+
+
+    }
+
+    @media screen and (max-width:426px) {
+        .main1 {
+            height: 45vh;
+        }
+
+        .br-text {
+            margin: auto;
+        }
+
+        .para-br {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:320px) {
+        .main1 {
+            height: 35vh;
+        }
+    }
+</style>
+
+<body>
+    <div class="main1">
+        <div class="navbar">
+            <div class="logo">
+                <h1 class="h1">BR <span class="span1">Architects</span> </h1>
+
+            </div>
+            <div class="nav">
+                <ul class="ul1">
+                    <li class="li1">Projects</li>
+                    <li class="li1">About</li>
+                    <li class="li1">Contacts</li>
+                </ul>
+            </div>
+        </div>
+        <div class="background-div">
+            <div class="br-div">
+                <div class="br-text">
+                    <h1 class="head-br">BR</h1>
+                </div>
+                <p class="para-br">Architects</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main2">
+        <div class="project-div2">
+            <p class="p-project2">Projects</p>
+        </div>
+        <div class="line-div2"></div>
+        <div class="mainhouse-div2">
+            <div class="house-div21">
+                <div class="house21">
+                    <img class="img-house21" src="./house2.jpg" alt="">
+                    <button class="btn21">Brick House</button>
+                </div>
+
+                <div class="house21">
+                    <img class="img-house21" src="./house3.jpg" alt="">
+                    <button class="btn21">Summer House</button>
+                </div>
+
+                <div class="house21">
+                    <img class="img-house21" src="./house4.jpg" alt="">
+                    <button class="btn21">renovated</button>
+                </div>
+
+                <div class="house21">
+                    <img class="img-house21" src="./house5.jpg" alt="">
+                    <button class="btn21">Barn House</button>
+                </div>
+            </div>
+
+            <div class="house-div21">
+
+                <div class="house21">
+                    <img class="img-house21" src="./house3.jpg" alt="">
+                    <button class="btn21">Summer House</button>
+                </div>
+                <div class="house21">
+                    <img class="img-house21" src="./house2.jpg" alt="">
+                    <button class="btn21">Brick House</button>
+                </div>
+
+
+                <div class="house21">
+                    <img class="img-house21" src="./house5.jpg" alt="">
+                    <button class="btn21">Barn House</button>
+                </div>
+                <div class="house21">
+                    <img class="img-house21" src="./house4.jpg" alt="">
+                    <button class="btn21">renovated</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main3">
+        <div class="about-pdiv3">
+            <p class="p-about3">About</p>
+        </div>
+        <div class="line-div3"></div>
+        <div class="para-div3">
+            <p class="p-div3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat.
+
+            </p>
+        </div>
+        <div class="about-div3">
+            <div class="john-div3">
+                <img class="john-img31" src="./team2.jpg" alt="">
+                <p class="john-p31">John Doe</p>
+                <p class="john-p32">CEO & Founder</p>
+                <p class="john-p33">Phasellus eget enim eu lectus faucibus
+                    vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button class="btn3">Contact</button>
+            </div>
+
+            <div class="john-div3">
+                <img class="john-img31" src="./team1.jpg" alt="">
+                <p class="john-p31">Jahn Doe</p>
+                <p class="john-p32">Architect</p>
+                <p class="john-p33">Phasellus eget enim eu lectus faucibus
+                    vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button class="btn3">Contact</button>
+            </div>
+
+            <div class="john-div3">
+                <img class="john-img31" src="./team3.jpg" alt="">
+                <p class="john-p31">Mike Rose</p>
+                <p class="john-p32">Architect</p>
+                <p class="john-p33">Phasellus eget enim eu lectus faucibus
+                    vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button class="btn3">Contact</button>
+            </div>
+
+            <div class="john-div3">
+                <img class="john-img31" src="./team4.jpg" alt="">
+                <p class="john-p31">Dan Star</p>
+                <p class="john-p32">Architect</p>
+                <p class="john-p33">Phasellus eget enim eu lectus faucibus
+                    vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button class="btn3">Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main4">
+        <div class="contact-pdiv4">
+            <p class="p-contact4">Contact</p>
+        </div>
+        <div class="line-div4"></div>
+        <div class="contact-div4">
+            <p class="p-contact4">Lets get in touch and talk about
+                your next project.</p>
+            <input class="input4" type="text" placeholder="Name">
+            <input class="input4" type="text" placeholder="Email">
+            <input class="input4" type="text" placeholder="Subject">
+            <input class="input4" type="text" placeholder="Comment">
+        </div>
+        <button class="btn4">SEND MESSAGE</button>
+    </div>
+
+    <div class="main5">
+        <img class="map-img5" src="./map.jpg" alt="">
+    </div>
+
+    <div class="main6">Powered by w3.css</div>
+
+</body>
+
+</html>
